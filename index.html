@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nuvora Care connects care homes, nursing homes and supported living providers with vetted healthcare professionals across Hull and the UK.">
+  <meta name="theme-color" content="#123f3a">
+  <title>Nuvora Care | Compassionate Healthcare Staffing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#123f3a;--green2:#1c5b52;--mint:#dcefe7;--cream:#f8f7f2;--ink:#172d2a;--muted:#647572;--orange:#f2a46f;--white:#fff;--line:#e3e9e5;--shadow:0 18px 55px rgba(18,63,58,.11)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;line-height:1.65}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+    .topbar{background:var(--green);color:#e9f5f0;font-size:13px}.topbar .wrap{display:flex;justify-content:space-between;gap:15px;padding:9px 0;flex-wrap:wrap}.topbar a{font-weight:700}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(227,233,229,.8)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-family:Manrope,sans-serif;font-size:23px;font-weight:800;letter-spacing:-1px;color:var(--green)}.brand-mark{width:39px;height:39px;border-radius:13px;background:var(--green);display:grid;place-items:center;color:white;font-size:23px;transform:rotate(-5deg)}.brand small{display:block;font-family:"DM Sans",sans-serif;font-size:10px;letter-spacing:2.4px;text-transform:uppercase;color:#6d817c;margin-top:-5px}.navlinks{display:flex;align-items:center;gap:27px;font-size:14px;font-weight:600;color:#40534f}.navlinks a:hover{color:var(--green2)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:999px;font-size:14px;font-weight:700;border:1px solid transparent;transition:.2s;cursor:pointer}.btn-primary{background:var(--green);color:white}.btn-primary:hover{background:var(--green2);transform:translateY(-1px)}.btn-light{background:white;color:var(--green);border-color:#d7e4de}.btn-light:hover{background:var(--mint)}.menu{display:none;background:none;border:0;color:var(--green);font-size:27px}
+    .hero{background:var(--cream);overflow:hidden;position:relative}.hero:before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:#e5f0e9;right:-180px;top:-220px}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding:72px 0 78px;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green2);font-size:12px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}.eyebrow:before{content:"";width:25px;height:2px;background:var(--orange)}h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.12;letter-spacing:-1.6px;margin:0;color:var(--green)}h1{font-size:clamp(40px,5.1vw,66px);margin:20px 0 22px;max-width:650px}h1 em{font-style:normal;color:#5b8b79}.hero-copy{font-size:17px;color:#5c6e69;max-width:550px;margin:0 0 29px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.micro-proof{display:flex;align-items:center;gap:13px;margin-top:32px;color:#62736e;font-size:13px}.avatars{display:flex}.avatars span{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#d4e8dd;border:2px solid var(--cream);margin-left:-7px;font-size:15px}.avatars span:first-child{margin-left:0}.micro-proof strong{color:var(--green)}
+    .hero-visual{position:relative;min-height:475px}.hero-photo{position:absolute;inset:0 20px 25px 20px;border-radius:180px 180px 28px 28px;background:#fff url('https://ashisebaai-dot.github.io/nuvoracare.github.io/images/hero-care.png') center/contain no-repeat;box-shadow:var(--shadow)}.floating-card{position:absolute;background:white;border-radius:18px;padding:18px 20px;box-shadow:var(--shadow);max-width:220px}.floating-card strong{display:block;color:var(--green);font-family:Manrope,sans-serif;font-size:15px}.floating-card small{display:block;color:var(--muted);font-size:12px;margin-top:4px}.float-one{left:-8px;bottom:4px}.float-two{right:-4px;top:54px;display:flex;gap:12px;align-items:center}.check-icon{width:39px;height:39px;border-radius:12px;background:var(--mint);display:grid;place-items:center;color:var(--green);font-size:20px}
+    .trust-strip{border-bottom:1px solid var(--line);background:#fff}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:23px 0;gap:15px}.trust-item{display:flex;align-items:center;gap:12px;justify-content:center;border-right:1px solid var(--line)}.trust-item:last-child{border:0}.trust-item b{display:block;font-family:Manrope,sans-serif;color:var(--green);font-size:14px}.trust-item span{font-size:12px;color:var(--muted)}.trust-icon{width:39px;height:39px;border-radius:12px;background:var(--cream);display:grid;place-items:center;font-size:19px}
+    section{padding:91px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 44px}.section-head h2{font-size:clamp(31px,4vw,45px);margin:14px 0}.section-head p{color:var(--muted);margin:0}.audience{background:#fff}.audience-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.audience-card{border-radius:25px;padding:34px;min-height:285px;position:relative;overflow:hidden}.audience-card.provider{background:var(--green);color:#e9f4ef}.audience-card.staff{background:var(--mint)}.audience-card h3{font-size:27px;margin:15px 0 12px;color:inherit}.audience-card p{max-width:410px;color:inherit;opacity:.82;margin:0 0 25px}.audience-card .btn-light{background:#fff}.audience-card.provider .btn-light{background:#fff;color:var(--green)}.audience-symbol{font-size:29px}
+    .roles{background:var(--cream)}.role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.role-card{background:#fff;border:1px solid #e7ece8;border-radius:20px;padding:25px;transition:.2s}.role-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.role-icon{width:100%;height:145px;border-radius:15px;background:#fff;display:grid;place-items:center;font-size:23px;margin-bottom:19px;overflow:hidden}.role-icon img{width:100%;height:100%;object-fit:contain;display:block}.role-card h3{font-size:19px;letter-spacing:-.4px;margin-bottom:10px}.role-card p{color:var(--muted);font-size:14px;margin:0}
+    .difference-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.difference-art{min-height:430px;border-radius:30px;background:#fff url('https://ashisebaai-dot.github.io/nuvoracare.github.io/images/role-hca.png') center/contain no-repeat;position:relative}.art-note{position:absolute;bottom:22px;left:22px;right:22px;background:rgba(255,255,255,.94);padding:18px 20px;border-radius:17px;color:var(--green);font-weight:700}.difference-copy h2{font-size:clamp(31px,4vw,45px);margin:14px 0 18px}.difference-copy>p{color:var(--muted);margin-bottom:26px}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:19px 22px}.benefit{display:flex;gap:12px}.benefit-mark{flex:0 0 27px;height:27px;border-radius:50%;background:var(--mint);color:var(--green);display:grid;place-items:center;font-size:14px;font-weight:800}.benefit b{display:block;color:var(--green);font-size:14px}.benefit span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+    .process{background:var(--green);color:#fff}.process .section-head h2{color:#fff}.process .section-head p{color:#c4d9d2}.process .eyebrow{color:#b9dfcf}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:27px}.step-num{font-family:Manrope,sans-serif;font-size:12px;letter-spacing:1px;color:#f5b58b;font-weight:800}.step h3{color:#fff;font-size:21px;margin:13px 0}.step p{margin:0;color:#c4d9d2;font-size:14px}
+    .faq-grid{max-width:850px;margin:auto}.faq-item{border-bottom:1px solid var(--line)}.faq-question{width:100%;padding:22px 0;background:none;border:0;display:flex;justify-content:space-between;gap:20px;text-align:left;color:var(--green);font-weight:700;font-size:16px;cursor:pointer}.faq-question span:last-child{font-size:23px;font-weight:400}.faq-answer{display:none;color:var(--muted);font-size:14px;padding:0 40px 22px 0}.faq-item.open .faq-answer{display:block}.faq-item.open .faq-question span:last-child{transform:rotate(45deg)}
+    .contact{background:var(--cream)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:start}.contact-copy h2{font-size:clamp(32px,4vw,46px);margin:14px 0 18px}.contact-copy>p{color:var(--muted);margin-bottom:30px}.contact-detail{display:flex;gap:14px;margin:19px 0;align-items:flex-start}.contact-detail .trust-icon{flex:0 0 42px}.contact-detail b{display:block;color:var(--green);font-size:14px}.contact-detail a,.contact-detail span{color:var(--muted);font-size:14px}.form-card{background:white;border:1px solid var(--line);border-radius:25px;padding:32px;box-shadow:0 15px 40px rgba(18,63,58,.05)}.form-card h3{font-size:24px;margin-bottom:8px}.form-card>p{color:var(--muted);font-size:13px;margin:0 0 23px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#425650}.field input,.field select,.field textarea{width:100%;border:1px solid #dce5df;border-radius:11px;padding:12px 13px;background:#fcfdfc;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#6b9d8b;box-shadow:0 0 0 3px #dcefe7}.field textarea{min-height:110px;resize:vertical}.form-card button{margin-top:19px;width:100%}.form-note{font-size:11px!important;margin:12px 0 0!important}.form-status{display:none;padding:12px;background:var(--mint);border-radius:10px;color:var(--green);font-size:13px;margin-top:14px}
+    footer{background:#0b2e2a;color:#d5e4de;padding:44px 0 22px}.footer-main{display:flex;justify-content:space-between;gap:30px;align-items:flex-start;padding-bottom:32px}.footer-brand{color:white}.footer-main p{max-width:360px;color:#a9c0b7;font-size:13px}.footer-links{display:flex;gap:20px;flex-wrap:wrap;font-size:13px}.footer-links a:hover{color:white}.footer-bottom{border-top:1px solid rgba(255,255,255,.15);padding-top:18px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#9bb5ab;font-size:11px}
+    @media(max-width:900px){.navlinks{gap:15px}.navlinks a:not(.btn){display:none}.hero-grid{gap:28px}.hero-visual{min-height:410px}.trust-grid{grid-template-columns:1fr 1fr}.trust-item:nth-child(2){border:0}.role-grid{grid-template-columns:1fr 1fr}.difference-grid{gap:35px}.contact-grid{gap:30px}}
+    @media(max-width:650px){.wrap{width:min(100% - 30px,1160px)}.topbar .wrap{justify-content:center;text-align:center;font-size:12px}.nav{height:70px}.brand{font-size:21px}.menu{display:block}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;padding:18px 22px 24px;border-bottom:1px solid var(--line);box-shadow:0 12px 20px #123f3a12;align-items:stretch;flex-direction:column}.navlinks.open{display:flex}.navlinks a:not(.btn){display:block;padding:5px 0}.hero-grid{grid-template-columns:1fr;padding:53px 0 55px}.hero-visual{min-height:350px;margin-top:4px}.hero-photo{inset:0 15px 18px 15px}.float-one{left:0;bottom:0}.float-two{right:0;top:28px}.floating-card{padding:13px 15px;max-width:190px}.hero-copy{font-size:16px}.trust-grid{padding:19px 0}.trust-item{justify-content:flex-start;border:0!important}.trust-item b{font-size:12px}.trust-item span{font-size:11px}.trust-icon{width:34px;height:34px;flex:0 0 34px}section{padding:65px 0}.audience-grid,.difference-grid,.contact-grid{grid-template-columns:1fr}.audience-card{padding:27px;min-height:260px}.role-grid{grid-template-columns:1fr}.role-card{padding:22px}.difference-art{min-height:340px;order:2}.difference-copy{order:1}.benefits{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.section-head{margin-bottom:32px}.form-card{padding:23px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-main{flex-direction:column}.footer-links{gap:15px}.contact-grid{gap:25px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>Compassionate healthcare staffing across Hull &amp; the UK</span><span>24/7 rota desk: <a href="tel:01482555019">01482 555 019</a> &nbsp;·&nbsp; <a href="mailto:info@nuvoracare.co.uk">info@nuvoracare.co.uk</a></span></div></div>
+  <header><div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Nuvora Care home"><span class="brand-mark">n</span><span>Nuvora Care<small>Care with confidence</small></span></a>
+    <button class="menu" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="navlinks"><a href="#roles">Staffing roles</a><a href="#why-us">Why Nuvora</a><a href="#faqs">FAQs</a><a class="btn btn-primary" href="#contact">Request staff <span>↗</span></a></nav>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><div class="wrap hero-grid">
+      <div><span class="eyebrow">Hull-based · UK-wide support</span><h1>Dependable care professionals. <em>Whenever you need us.</em></h1>
+        <p class="hero-copy">Nuvora Care connects nursing homes, care homes and supported living providers with carefully vetted nurses and carers — helping you keep every shift safe, supported and running smoothly.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#contact">Request shift cover <span>↗</span></a><a class="btn btn-light" href="#contact" data-enquiry="careers">Join our team <span>↗</span></a></div>
+        <div class="micro-proof"><div class="avatars"><span>✚</span><span>♡</span><span>✓</span></div><div><strong>People first. Every shift.</strong><br>Professional standards with a human touch.</div></div>
+      </div>
+      <div class="hero-visual"><div class="hero-photo" role="img" aria-label="Healthcare professional in a bright, welcoming care environment"></div><div class="floating-card float-two"><span class="check-icon">✓</span><div><strong>Vetting comes first</strong><small>Compliance-led recruitment</small></div></div><div class="floating-card float-one"><strong>Day, night &amp; weekends</strong><small>Planned bookings and short-notice cover</small></div></div>
+    </div></section>
+    <div class="trust-strip"><div class="wrap trust-grid">
+      <div class="trust-item"><span class="trust-icon">◷</span><div><b>365-day support</b><span>On-call rota assistance</span></div></div>
+      <div class="trust-item"><span class="trust-icon">✓</span><div><b>Compliance focused</b><span>Checks before placement</span></div></div>
+      <div class="trust-item"><span class="trust-icon">☼</span><div><b>Flexible cover</b><span>Urgent or planned shifts</span></div></div>
+      <div class="trust-item"><span class="trust-icon">♡</span><div><b>People-centred</b><span>Kindness and continuity</span></div></div>
+    </div></div>
+    <section class="audience"><div class="wrap"><div class="section-head"><span class="eyebrow">Here when you need us</span><h2>Support for both sides of care</h2><p>Whether you're filling a gap in your rota or looking for your next opportunity, we're here to help.</p></div>
+      <div class="audience-grid">
+        <article class="audience-card provider"><div class="audience-symbol">✚</div><h3>Need reliable care staff?</h3><p>Cover sickness, annual leave, busy periods or longer-term bookings with suitable, vetted professionals.</p><a class="btn btn-light" href="#contact" data-enquiry="staff">Request staff cover <span>↗</span></a></article>
+        <article class="audience-card staff"><div class="audience-symbol">♡</div><h3>Looking for flexible shifts?</h3><p>Explore day and night opportunities with supportive coordination and a team that values your skills.</p><a class="btn btn-light" href="#contact" data-enquiry="careers">Register your interest <span>↗</span></a></article>
+      </div>
+    </div></section>
+    <section class="roles" id="roles"><div class="wrap"><div class="section-head"><span class="eyebrow">The people we provide</span><h2>Skilled professionals, chosen for ability and kindness</h2><p>We focus on matching the right people to the needs of each care setting and the people who call it home.</p></div>
+      <div class="role-grid">
+        <article class="role-card"><div class="role-icon"><img src="https://ashisebaai-dot.github.io/nuvoracare.github.io/images/role-nurse.png" alt="Nuvora Care Registered Nurse illustration" loading="lazy"></div><h3>Registered Nurses</h3><p>RGN and RMN professionals for nursing homes and clinical settings, bringing sound judgement, safe practice and calm leadership.</p></article>
+        <article class="role-card"><div class="role-icon"><img src="https://ashisebaai-dot.github.io/nuvoracare.github.io/images/role-hca.png" alt="Nuvora Care Healthcare Assistant illustration" loading="lazy"></div><h3>Healthcare Assistants</h3><p>Attentive support with personal care, safe mobility, mealtimes and reassuring day-to-day companionship.</p></article>
+        <article class="role-card"><div class="role-icon"><img src="https://ashisebaai-dot.github.io/nuvoracare.github.io/images/role-senior.png" alt="Nuvora Care Senior Care Assistant illustration" loading="lazy" onerror="this.onerror=null;this.src='https://ashisebaai-dot.github.io/nuvoracare.github.io/images/role-nurse.png'"></div><h3>Senior Care Assistants</h3><p>Experienced team members who support shift coordination, care plans and consistent standards.</p></article>
+        <article class="role-card"><div class="role-icon"><img src="https://ashisebaai-dot.github.io/nuvoracare.github.io/images/role-support.png" alt="Nuvora Care Support Worker illustration" loading="lazy"></div><h3>Support Workers</h3><p>Person-centred support that helps adults build confidence, independence and meaningful daily routines.</p></article>
+        <article class="role-card"><div class="role-icon"><img src="https://ashisebaai-dot.github.io/nuvoracare.github.io/images/role-kitchen.png" alt="Nuvora Care Kitchen Assistant illustration" loading="lazy"></div><h3>Kitchen Assistants</h3><p>Reliable catering support to help keep mealtimes welcoming, organised and hygienic.</p></article>
+        <article class="role-card"><div class="role-icon">✦</div><h3>Domestic Assistants</h3><p>Dependable housekeeping support that helps care environments stay clean, comfortable and ready for residents.</p></article>
+      </div>
+    </div></section>
+    <section id="why-us"><div class="wrap difference-grid"><div class="difference-art" role="img" aria-label="Healthcare team working together"><div class="art-note">“Good care starts with the right people, supported by a team that listens.”</div></div>
+      <div class="difference-copy"><span class="eyebrow">The Nuvora difference</span><h2>More than filling a shift. Helping care feel consistent.</h2><p>When a rota changes at short notice, you need a responsive partner who understands the responsibility behind every placement. We combine practical coordination with a people-first approach.</p>
+        <div class="benefits">
+          <div class="benefit"><span class="benefit-mark">✓</span><div><b>Real people to speak to</b><span>Responsive, local coordination.</span></div></div>
+          <div class="benefit"><span class="benefit-mark">✓</span><div><b>Compliance-led checks</b><span>Identity, right to work, references and role-specific checks.</span></div></div>
+          <div class="benefit"><span class="benefit-mark">✓</span><div><b>Planned or urgent cover</b><span>Support for rota gaps and advance bookings.</span></div></div>
+          <div class="benefit"><span class="benefit-mark">✓</span><div><b>Continuity matters</b><span>We aim to build familiar, dependable placements.</span></div></div>
+          <div class="benefit"><span class="benefit-mark">✓</span><div><b>Skills and empathy</b><span>Professional experience with a compassionate approach.</span></div></div>
+          <div class="benefit"><span class="benefit-mark">✓</span><div><b>Day and night shifts</b><span>Including weekends and short-notice requests.</span></div></div>
+        </div>
+      </div></div></section>
+    <section class="process"><div class="wrap"><div class="section-head"><span class="eyebrow">Straightforward support</span><h2>A simple route to the right cover</h2><p>Tell us what your service needs. We'll discuss the details and help you plan the next step.</p></div><div class="steps">
+      <article class="step"><span class="step-num">STEP 01</span><h3>Tell us about the shift</h3><p>Share the role, location, date, hours and any essential requirements.</p></article>
+      <article class="step"><span class="step-num">STEP 02</span><h3>We discuss the match</h3><p>Our team reviews your request and discusses suitable availability and compliance needs.</p></article>
+      <article class="step"><span class="step-num">STEP 03</span><h3>Confirm the details</h3><p>We coordinate the agreed booking and keep communication clear as plans progress.</p></article>
+    </div></div></section>
+    <section id="faqs"><div class="wrap"><div class="section-head"><span class="eyebrow">FAQs</span><h2>Questions, answered</h2><p>A few useful details about working with Nuvora Care.</p></div>
+      <div class="faq-grid">
+        <div class="faq-item open"><button class="faq-question"><span>Can you help with urgent rota gaps?</span><span>＋</span></button><div class="faq-answer">Yes. Contact our rota desk to discuss short-notice sickness cover or an urgent staffing requirement. Availability depends on the role, location and shift details.</div></div>
+        <div class="faq-item"><button class="faq-question"><span>Which roles can I request?</span><span>＋</span></button><div class="faq-answer">You can enquire about Registered Nurses (RGN/RMN), Healthcare Assistants, Senior Care Assistants, Support Workers, Kitchen Assistants and Domestic Assistants.</div></div>
+        <div class="faq-item"><button class="faq-question"><span>What areas do you cover?</span><span>＋</span></button><div class="faq-answer">Nuvora Care is based in Hull and supports staffing enquiries across Hull, East Yorkshire and wider UK locations. Please contact us to confirm coverage for your service.</div></div>
+        <div class="faq-item"><button class="faq-question"><span>What checks do staff complete?</span><span>＋</span></button><div class="faq-answer">Checks are role-specific and may include identity, right to work, references, Enhanced DBS and, for registered nurses, NMC registration. Exact requirements are confirmed during the booking process.</div></div>
+        <div class="faq-item"><button class="faq-question"><span>How do I register interest in shifts?</span><span>＋</span></button><div class="faq-answer">Use the contact form and select “I'm looking for work”. Include your role, experience and preferred area, and our team can follow up with you.</div></div>
+      </div>
+    </div></section>
+    <section class="contact" id="contact"><div class="wrap contact-grid">
+      <div class="contact-copy"><span class="eyebrow">Let's talk</span><h2>Let's find the right support for your team.</h2><p>Tell us what you need and we'll get back to you to discuss the next step. For urgent rota enquiries, please call us directly.</p>
+        <div class="contact-detail"><span class="trust-icon">☎</span><div><b>24/7 rota desk</b><a href="tel:01482555019">01482 555 019</a></div></div>
+        <div class="contact-detail"><span class="trust-icon">✉</span><div><b>Email our team</b><a href="mailto:info@nuvoracare.co.uk">info@nuvoracare.co.uk</a></div></div>
+        <div class="contact-detail"><span class="trust-icon">⌖</span><div><b>Local presence</b><span>Bridge View, Hull · HU4 7DY</span></div></div>
+      </div>
+      <form class="form-card" id="contactForm">
+        <h3>Send an enquiry</h3><p>Complete the form and choose what you're contacting us about.</p>
+        <div class="form-grid">
+          <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required placeholder="Full name"></div>
+          <div class="field"><label for="organisation">Organisation</label><input id="organisation" name="organisation" autocomplete="organization" placeholder="Care home / service"></div>
+          <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+          <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Your phone number"></div>
+          <div class="field full"><label for="enquiry">I'm contacting you about *</label><select id="enquiry" name="enquiry" required><option value="">Please select</option><option>Requesting staff / shift cover</option><option>I'm looking for work</option><option>General enquiry</option></select></div>
+          <div class="field full"><label for="message">How can we help? *</label><textarea id="message" name="message" required placeholder="Tell us about the role, shift, location or enquiry…"></textarea></div>
+        </div>
+        <button class="btn btn-primary" type="submit">Prepare email enquiry <span>↗</span></button>
+        <p class="form-note">This demo prepares an email in your email app. No information is stored on this website.</p>
+        <div class="form-status" id="formStatus" role="status"></div>
+      </form>
+    </div></section>
+  </main>
+  <footer><div class="wrap"><div class="footer-main">
+    <div><a class="brand footer-brand" href="#home"><span class="brand-mark">n</span><span>Nuvora Care<small>Care with confidence</small></span></a><p>Compassionate healthcare staffing for nursing homes, care homes and supported living services across Hull and the UK.</p></div>
+    <div class="footer-links"><a href="#roles">Staffing roles</a><a href="#why-us">Why Nuvora</a><a href="#faqs">FAQs</a><a href="#contact">Contact</a><a href="mailto:info@nuvoracare.co.uk">Email us</a></div>
+  </div><div class="footer-bottom"><span>© <span id="year"></span> Nuvora Care. All rights reserved.</span><span>People first. Every shift.</span></div></div></footer>
+  <script>
+    const menuBtn=document.getElementById('menuBtn'), nav=document.getElementById('navlinks');
+    menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰'});
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+    document.querySelectorAll('.faq-question').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('open')));
+    document.querySelectorAll('[data-enquiry]').forEach(link=>link.addEventListener('click',()=>{const select=document.getElementById('enquiry');select.value=link.dataset.enquiry==='careers'?"I'm looking for work":"Requesting staff / shift cover"}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const f=new FormData(e.currentTarget);
+      const subject=encodeURIComponent('Nuvora Care website enquiry — '+f.get('enquiry'));
+      const body=encodeURIComponent(
+        'Name: '+f.get('name')+'\nOrganisation: '+(f.get('organisation')||'Not provided')+
+        '\nEmail: '+f.get('email')+'\nPhone: '+(f.get('phone')||'Not provided')+
+        '\nEnquiry: '+f.get('enquiry')+'\n\nMessage:\n'+f.get('message')
+      );
+      const status=document.getElementById('formStatus');
+      status.style.display='block';
+      status.textContent='Your email app should open with the enquiry details. Please review and send the email to info@nuvoracare.co.uk.';
+      window.location.href='mailto:info@nuvoracare.co.uk?subject='+subject+'&body='+body;
+    });
+  </script>
+</body>
+</html>
