@@ -3,46 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nuvora Care | Nursing &amp; Care Staffing in Hull &amp; UK</title>
+<title>Nuvora Care | Compassionate Nursing &amp; Care Staffing in Hull &amp; UK</title>
 <link href="https://googleapis.com" rel="stylesheet">
 <style>
-:root{--dark:#3b1319;--navy:#581d26;--slate:#5c4d49;--line:#eadcd3;--soft:#fdf8f4;--blue:#c86446;--white:#fff}
+:root{--dark:#143630;--navy:#1f4e46;--slate:#4e5955;--line:#e3ded6;--soft:#faf7f2;--blue:#d97757;--white:#ffffff}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',sans-serif;color:var(--navy);line-height:1.6}
+body{font-family:'Inter',sans-serif;color:var(--navy);background:var(--soft);line-height:1.6}
 h1,h2,h3,h4{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-0.02em}
 img{max-width:100%;display:block}
-.top{background:var(--dark);color:#f3e5dc;font-size:.85rem;padding:.5rem 1.5rem}
+.top{background:var(--dark);color:#e2ece9;font-size:.85rem;padding:.55rem 1.5rem}
 .wrap{max-width:1160px;margin:0 auto}
 .flex-between{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
 .top a{color:var(--white);text-decoration:none}
-header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;padding:1rem 1.5rem}
+header{background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;padding:1rem 1.5rem}
 .brand{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.45rem;font-weight:800;color:var(--navy);text-decoration:none}
 .brand span{color:var(--blue)}
 nav a{margin-left:1.5rem;text-decoration:none;color:var(--slate);font-weight:500;font-size:.95rem}
-.nav-btn{background:var(--navy);color:var(--white)!important;padding:.55rem 1.1rem;border-radius:8px}
-.hero{background:radial-gradient(circle at top right,#7c2d36,var(--dark) 65%);color:var(--white);padding:4.5rem 1.5rem}
+nav a:hover{color:var(--navy)}
+.nav-btn{background:var(--navy);color:var(--white)!important;padding:.55rem 1.15rem;border-radius:8px}
+.hero{background:radial-gradient(circle at top right,#2a665c,var(--dark) 68%);color:var(--white);padding:4.5rem 1.5rem}
 .grid-2{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
-.badge{display:inline-block;background:rgba(200,100,70,.25);border:1px solid rgba(255,214,196,.45);color:#ffd6c4;padding:.3rem .85rem;border-radius:99px;font-size:.8rem;font-weight:600;margin-bottom:1rem}
-.hero h1{font-size:2.8rem;line-height:1.15;margin-bottom:1rem}
-.hero p{color:#f3e5dc;font-size:1.1rem;margin-bottom:1.75rem}
+.badge{display:inline-block;background:rgba(217,119,87,.22);border:1px solid rgba(255,214,196,.45);color:#ffd8c8;padding:.35rem .9rem;border-radius:99px;font-size:.8rem;font-weight:600;margin-bottom:1rem}
+.hero h1{font-size:2.75rem;line-height:1.15;margin-bottom:1rem}
+.hero p{color:#e2ece9;font-size:1.1rem;margin-bottom:1.75rem}
 .btn{display:inline-block;padding:.85rem 1.6rem;border-radius:8px;font-weight:600;text-decoration:none;margin-right:.75rem;margin-bottom:.5rem}
 .btn-blue{background:var(--blue);color:var(--white)}
 .btn-outline{border:1px solid rgba(255,255,255,.35);color:var(--white)}
-.art-box{background:var(--white);border-radius:18px;padding:1.5rem}
+.art-box{background:var(--soft);border-radius:18px;padding:1.5rem;box-shadow:0 18px 40px rgba(0,0,0,.22)}
 .art-box img{height:300px;width:100%;object-fit:contain}
 .stats{background:var(--navy);color:var(--white);padding:2.25rem 1.5rem;border-top:1px solid rgba(255,255,255,.12)}
 .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
 .stat{text-align:center}
-.stat h3{font-size:2.2rem;color:#f4a27e}
-.stat p{color:#f3e5dc;font-size:.95rem}
+.stat h3{font-size:2.2rem;color:#f5a387}
+.stat p{color:#e2ece9;font-size:.95rem}
+.compliance{background:var(--white);border-bottom:1px solid var(--line);padding:1.5rem}
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;text-align:center}
+.comp-item{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem}
+.comp-item strong{display:block;color:var(--navy);font-size:.95rem}
+.comp-item span{color:var(--slate);font-size:.84rem}
+.pathways{padding:3.5rem 1.5rem 0}
+.path-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:2rem;border-top:4px solid var(--navy)}
+.path-card.warm{border-top-color:var(--blue)}
+.path-card h3{font-size:1.35rem;margin-bottom:.6rem}
+.path-card p{color:var(--slate);margin-bottom:1.25rem;font-size:.96rem}
 section{padding:4.5rem 1.5rem}
-.bg-soft{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bg-soft{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .sec-head{text-align:center;max-width:680px;margin:0 auto 3rem}
 .sec-label{color:var(--blue);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:.5rem}
 .sec-head h2{font-size:2.1rem;margin-bottom:.75rem}
 .sec-head p{color:var(--slate)}
 .card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:1.5rem}
-.card-art{background:var(--soft);border-radius:10px;padding:.75rem;margin-bottom:1.25rem}
+.card-art{background:var(--soft);border-radius:10px;padding:.75rem;margin-bottom:1.25rem;border:1px solid var(--line)}
 .card-art img{height:150px;width:100%;object-fit:contain}
 .card h3{font-size:1.2rem;margin-bottom:.5rem}
 .card p{color:var(--slate);font-size:.94rem}
@@ -51,13 +62,13 @@ summary{padding:1.15rem 1.4rem;font-family:'Plus Jakarta Sans',sans-serif;font-w
 details p{padding:0 1.4rem 1.2rem;color:var(--slate);font-size:.95rem}
 .cta{background:var(--navy);color:var(--white);border-radius:20px;padding:3rem}
 .cta h2{font-size:2rem;margin-bottom:1rem}
-.cta p{color:#f3e5dc;margin-bottom:1rem}
-.form-box{background:var(--white);color:var(--navy);padding:1.75rem;border-radius:14px;display:flex;flex-direction:column;gap:.85rem}
-input,select,textarea{width:100%;padding:.8rem;border:1px solid var(--line);border-radius:8px;font-family:inherit}
+.cta p{color:#e2ece9;margin-bottom:1rem}
+.form-box{background:var(--soft);color:var(--navy);padding:1.75rem;border-radius:14px;display:flex;flex-direction:column;gap:.85rem}
+input,select,textarea{width:100%;padding:.8rem;border:1px solid var(--line);border-radius:8px;font-family:inherit;background:var(--white)}
 button{background:var(--blue);color:var(--white);border:none;padding:.9rem;border-radius:8px;font-weight:600;font-size:1rem;cursor:pointer}
-footer{background:var(--dark);color:#d6c3b8;padding:3rem 1.5rem 2rem;font-size:.9rem}
+footer{background:var(--dark);color:#c4d4cf;padding:3rem 1.5rem 2rem;font-size:.9rem}
 footer h4{color:var(--white);margin-bottom:.75rem}
-footer a{color:#d6c3b8;text-decoration:none;display:block;margin-bottom:.4rem}
+footer a{color:#c4d4cf;text-decoration:none;display:block;margin-bottom:.4rem}
 @media(max-width:800px){.grid-2{grid-template-columns:1fr}.hero h1{font-size:2.1rem}nav{display:none}}
 </style>
 </head>
@@ -102,6 +113,31 @@ footer a{color:#d6c3b8;text-decoration:none;display:block;margin-bottom:.4rem}
     <div class="stat"><h3>365 Days</h3><p>Round-the-clock on-call rota support</p></div>
     <div class="stat"><h3>100% Vetted</h3><p>Enhanced DBS &amp; NMC PIN checked</p></div>
     <div class="stat"><h3>Day &amp; Night</h3><p>Emergency &amp; planned shift cover</p></div>
+  </div>
+</div>
+<div class="compliance">
+  <div class="wrap comp-grid">
+    <div class="comp-item"><strong>Enhanced DBS Checked</strong><span>100% cleared &amp; regularly updated</span></div>
+    <div class="comp-item"><strong>NMC PIN Verified</strong><span>Active checks for all Registered Nurses</span></div>
+    <div class="comp-item"><strong>Mandatory Training</strong><span>BLS, Moving &amp; Handling certified</span></div>
+    <div class="comp-item"><strong>Hull &amp; UK-Wide</strong><span>Local office at Bridge View, HU4 7DY</span></div>
+  </div>
+</div>
+
+<div class="pathways">
+  <div class="wrap grid-2">
+    <div class="path-card">
+      <span class="sec-label">For Care Providers</span>
+      <h3>I Need Nursing or Care Staff</h3>
+      <p>Cover unexpected sickness, annual leave, or long-term block bookings with vetted RGNs, RMNs, HCAs, and Support Workers.</p>
+      <a href="#contact" class="btn btn-blue">Request Shift Cover</a>
+    </div>
+    <div class="path-card warm">
+      <span class="sec-label">For Healthcare Professionals</span>
+      <h3>I'm Looking for Flexible Shifts</h3>
+      <p>Join Nuvora Care for competitive weekly pay, flexible day or night shifts, and supportive local coordination in Hull and beyond.</p>
+      <a href="#contact" class="btn btn-blue">Apply to Join Our Team</a>
+    </div>
   </div>
 </div>
 
